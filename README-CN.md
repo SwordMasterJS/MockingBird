@@ -104,9 +104,9 @@
 * 确保项目以上环境已经安装ok，运行`pip install -r requirements_vc.txt` 来安装剩余的必要包。
 * 下载以下模型 链接：https://pan.baidu.com/s/1bl_x_DHJSAUyN2fma-Q_Wg 
 提取码：gh41
-  * 24K采样率专用的vocoder（hifigan）到 *vocoder\saved_mode\xxx*
-  * 预训练的ppg特征encoder(ppg_extractor)到 *ppg_extractor\saved_mode\xxx*
-  * 预训练的PPG2Mel到 *ppg2mel\saved_mode\xxx*
+  * 24K采样率专用的vocoder（hifigan）到 *vocoder\saved_models\xxx*
+  * 预训练的ppg特征encoder(ppg_extractor)到 *ppg_extractor\saved_models\xxx*
+  * 预训练的PPG2Mel到 *ppg2mel\saved_models\xxx*
 
 #### 4.1 使用数据集自己训练PPG2Mel模型 (可选)
 
@@ -124,7 +124,7 @@
 
 #### 4.2 启动工具箱VC模式
 您可以尝试使用以下命令：
-`python demo_toolbox.py vc -d <datasets_root>`
+`python demo_toolbox.py -vc -d <datasets_root>`
 > 请指定一个可用的数据集文件路径，如果有支持的数据集则会自动加载供调试，也同时会作为手动录制音频的存储目录。
 <img width="971" alt="微信图片_20220305005351" src="https://user-images.githubusercontent.com/7423248/156805733-2b093dbc-d989-4e68-8609-db11f365886a.png">
 
